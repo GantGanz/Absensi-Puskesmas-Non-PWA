@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Presensi Puskesmas Kasiman</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="img/selfie-96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <meta name="theme-color" content="#3CB043">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="alert-login" class="alert alert-danger mx-auto" role="alert"
+        style="display:none; position: fixed; width: 100%;">
+        <div class="text-center"><strong id="pesan-login">Maaf, Username atau Password anda salah dan pastikan terdapat
+                koneksi internet</strong></div>
+    </div>
+    <div id="loader" style="display:none;"></div>
+    <div id="bg-loader" style="display:none;"></div>
+
+    <br><br><br>
+    <div class="container bg-light mx-auto mt-5 rounded w-75">
+        <div class="container mx-auto text-center pt-3">
+            <h2>Aplikasi Presensi Puskesmas Kasiman</h2>
+        </div>
+        <div class="container containerbox pb-3">
+            <!-- <img src="img/logo-puskesmas.png" alt="logo-puskesmas"> -->
+            <!-- <br> -->
+            <hr>
+            <form id="login-form">
+                <label for="login-username">Username : </label>
+                <input type="text" id="login-username" required class="form-control"
+                    placeholder="Masukkan Username Anda">
+                <label for="login-password" class="mt-2">Password : </label>
+                <input type="password" id="login-password" required class="form-control"
+                    placeholder="Masukkan Password Anda">
+                <div class="text-right">
+                    <button class="btn btn-primary mt-3">Masuk</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br><br><br>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script> -->
+
+    <script src="scripts/config.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/app.js"></script>
+
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+</body>
+
+</html>
