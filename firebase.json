@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "presensi-non-pwa",
     "public": "public",
     "ignore": [
       "firebase.json",
